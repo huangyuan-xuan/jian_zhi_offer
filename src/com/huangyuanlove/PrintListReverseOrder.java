@@ -38,11 +38,3 @@ static ArrayList<Integer> result = new ArrayList<>();
 
 }
 
-class ListNode {
-    int val;
-    ListNode next = null;
-
-    ListNode(int val) {
-        this.val = val;
-    }
-}
