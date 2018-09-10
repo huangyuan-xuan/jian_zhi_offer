@@ -6,7 +6,39 @@ package com.huangyuanlove;
 public class Merge {
 
 
-    public ListNode Merge(ListNode list1, ListNode list2) {
+
+    public static void main(String ... args){
+
+        ListNode one1 = new ListNode(1);
+        ListNode one5 = new ListNode(5);
+        ListNode one7 = new ListNode(7);
+        ListNode one9 = new ListNode(9);
+        one1.next = one5;
+        one5.next = one7;
+        one7.next = one9;
+
+        ListNode two2= new ListNode(2);
+        ListNode two3= new ListNode(3);
+        ListNode two4= new ListNode(4);
+        ListNode two10= new ListNode(10);
+        two2.next = two3;
+        two3.next = two4;
+        two4.next = two10;
+
+
+        ListNode result = Merge(one1,two2);
+       while (result!=null){
+           System.out.print(result.val +" ");
+           result = result.next;
+       }
+
+
+
+
+    }
+
+
+     static ListNode Merge(ListNode list1, ListNode list2) {
         if (list1 == null) {
             return list2;
         }
