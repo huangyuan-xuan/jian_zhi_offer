@@ -9,8 +9,8 @@ public class ConstructBinaryTree {
 
 
     public static void main(String... args) {
-        int pre[] = {1, 2, 4, 7, 3, 5, 6, 8};
-        int in[] = {4, 7, 2, 1, 5, 3, 8, 6};
+        int pre[] = {1, 2, 4, 3, 5, 7, 6};
+        int in[] = {2, 4, 1, 5, 7, 3, 6};
 
         TreeNode result = reConstructBinaryTree(pre, in);
         printTreeNode(result);
